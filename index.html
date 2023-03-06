@@ -1,58 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flexbox Exercise</title>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sergei Klein | Software Developer</title>
 
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-
-<body>
-    <div class="container">
+        <link rel="stylesheet" href="./layout.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <!-- ----------------------------------------------------------------------------------------------------------------------------- -->
+    <body class="container">
 
         <header class="header">
 
-            <a class="logo" href="#">Company Logo</a>
+            <img src="./Images/SK Logo.png" alt="image" height="100" width="150">
 
-            <nav class="nav">
-                <ul>
-                    <li><a href="#">Page 1</a></li>
-                    <li><a href="#">Page 2</a></li>
-                    <li><a href="#">Page 3</a></li>
-                    <li><a href="#">Page 4</a></li>
-                    <li><a href="#">Page 5</a></li>
-                </ul>
+            <nav class="nav">           
+                <a class="nav_link" href="#">about</a>
+                <a class="nav_link" href="#">projects</a>
+                <a class="nav_link" href="#">education</a>
+                <a class="nav_link" href="#">tools</a>
+                <a class="nav_link" href="#">resume</a>
+                <a class="nav_link" href="#">contact</a>          
             </nav>
 
         </header>
-
+        
         <main>
-
-            <h1>Main content</h1>
-
-            <div class="cards">
-                <article class="card">
-                    <h2>Post 1</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad temporibus inventore quibusdam, enim illum sequi saepe, eveniet cum? Est ullam aut neque excepturi velit debitis nesciunt laboriosam officia consequatur natus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nisi hic libero, voluptates eius dolores, porro quis aliquid optio natus reiciendis facere voluptas voluptatem, velit consectetur esse magnam architecto suscipit!</p>
-                    <button class="btn">Learn More</button>
-                </article>
-                <article class="card">
-                    <h2>Post 2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, quibusdam, odit! Ab aperiam perspiciatis unde dolorum nisi. Veritatis sint, placeat incidunt illum. Iste in odio inventore, delectus soluta! Inventore, placeat.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, non aliquam beatae amet tempore id corporis, dignissimos voluptatibus, unde, a corrupti. Quae, reprehenderit velit similique totam nam id laboriosam quod.</p>
-                    <button class="btn">Learn More</button>
-                </article>
-                <article class="card">
-                    <h2>Post 3</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde maxime beatae iste consectetur, totam quaerat impedit nam vel ullam. Impedit eveniet cum sequi, iure facere distinctio ex ratione odit possimus!</p>
-                    <button class="btn">Learn More</button>
-                </article>
+        <!-- --------------------------------------------------------------------------------------------INTRO ---------------- -->
+            <div class="intro_page">
+                
+                <div class="intro_name">
+                    <h1 class="name_first">Sergei</h1>
+                    <h1 class="name_last">&nbsp;Klein</h1>
+                </div>
+                <div class="intro_titles">
+                    <p class="intro_title">Software Developer</p>
+                    <p class="intro_title">Problem Solver</p>
+                    <p class="intro_title">Designer</p>
+                </div>
+                <div class="intro_socialmedia_links">
+                    <a class="link_button" href="#">soc-link-2</a></li>
+                    <a class="link_button" href="#">soc-link-3</a></li>
+                </div> 
+        
             </div>
+        <!-- --------------------------------------------------------------------------------------------PROJECT---------------- -->
+            <div class="projects_page">
+                
+                <div class="two_color_title_text">
+                    <h2 class="block_title_typical">My</h2>
+                    <h2 class="block_title_typical">Projects</h2>
+                </div>
+
+                <div class="project_block">
+
+                    <img src="./Images/Review Site Image.jpg" alt="image" height="100" width="150">
+
+                    <div class="project_info_block">
+                        <h4 class="project_name">Project Name</h4>
+
+                        <p>Project Description</p>
+
+                        <div class="socialmedia_links">
+                            <a class="link_button" href="#">Demo</a></li>
+                            <a class="link_button" href="#">Git-hub</a></li>
+                        </div>
+
+                    </div>
+
+                </div> 
+
+            </div>
+        <!-- --------------------------------------------------------------------------------------------TOOLS------------------ -->
+        <div class="tools_page">
+            
+            <div class="two_color_title_text">
+                <h2 class="block_title_typical">Tech</h2>
+                <h2 class="block_title_typical">Skills</h2>
+            </div>
+          
+            <div class="tech_skill_icons">
+                <img class="icon_style" src="./Images/HTML Icon.png" alt="HTML Icon" height="100px" width="100px">
+                <img class="icon_style" src="./Images/CSS Icon.png" alt="CSS Icon" height="100px" width="100px">
+                <img class="icon_style" src="./Images/JavScript Icon.png" alt="CSS Icon" height="100px" width="100px">
+                <img class="icon_style" src="./Images/React  Icon.png" alt="CSS Icon" height="100px" width="100px">
+                <img class="icon_style" src="./Images/C Sharp Icon.png" alt="CSS Icon" height="100px" width="100px">
+            </div> 
+        </div>
+        <!-- --------------------------------------------------------------------------------------------CONTACT------------------ -->
+        <div class="contact_page">
+            
+            
+            <div class="two_color_title_text">
+                <h2 class="block_title_typical">Contact</h2>
+                <h2 class="block_title_typical">Info</h2>
+            </div>
+
+            <p>My intro paragraph</p>
+            <div class="socialmedia_links">
+                <li><a href="#">soc-link-2</a></li>
+                <li><a href="#">soc-link-3</a></li>
+            </div> 
+        </div>
+        <!-- --------------------------------------------------------------------------------------------FOOTER------------------ -->
         </main>
         
         <aside>
@@ -75,6 +127,5 @@
                 <li><a href="#">soc-link-3</a></li>
             </ul>
         </footer>
-    </div>
-</body>
+    </body>
 </html>
