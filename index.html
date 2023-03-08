@@ -9,116 +9,149 @@
         <link rel="stylesheet" href="./layout.css">
         <link rel="stylesheet" href="./style.css">
     </head>
-    <!-- ----------------------------------------------------------------------------------------------------------------------------- -->
+
     <body class="container">
 
-        <header class="header">
-
-            <img src="./Images/SK Logo.png" alt="image" height="100" width="150">
-
-            <nav class="nav">           
-                <a class="nav_link" href="#">about</a>
-                <a class="nav_link" href="#">projects</a>
-                <a class="nav_link" href="#">education</a>
-                <a class="nav_link" href="#">tools</a>
-                <a class="nav_link" href="#">resume</a>
-                <a class="nav_link" href="#">contact</a>          
-            </nav>
-
-        </header>
-        
         <main>
-        <!-- --------------------------------------------------------------------------------------------INTRO ---------------- -->
-            <div class="intro_page">
+<!-- --------------------------------------------------------------------------------------------------------HEADER-------------- -->
+            <header class="header">
+
+                <!-- <img src="./Images/SK Logo.png" alt="image" height="100" width="150"> -->
+    
+                <nav class="nav">           
+                    <a class="nav_link nav_link1" href="#intro_page">about</a>
+                    <a class="nav_link nav_link1" href="#education_page">education</a>
+                    <a class="nav_link nav_link1" href="#projects_page">projects</a>                   
+                    <a class="nav_link nav_link1" href="#skills_page">skills</a>
+                    <a class="nav_link nav_link1" href="#resume_page">resume</a>
+                    <a class="nav_link nav_link1" href="#contact_page">contact</a>          
+                </nav>
+    
+            </header>
+            <!-- --------------------------------------------------------------------------------------------INTRO--------------- -->
+            <div id="intro_page">
                 
                 <div class="intro_name">
-                    <h1 class="name_first">Sergei</h1>
-                    <h1 class="name_last">&nbsp;Klein</h1>
+                    <h1 class="name_first">sergei.klein</h1>
                 </div>
-                <div class="intro_titles">
+
+                <div class="intro_titles_block">
                     <p class="intro_title">Software Developer</p>
                     <p class="intro_title">Problem Solver</p>
                     <p class="intro_title">Designer</p>
                 </div>
+
                 <div class="intro_socialmedia_links">
-                    <a class="link_button" href="#">soc-link-2</a></li>
-                    <a class="link_button" href="#">soc-link-3</a></li>
+                    <a class="link_button_white" href="#">projects</a></li>
+                    <a class="link_button_white" href="#">git-hub</a></li>
                 </div> 
         
             </div>
-        <!-- --------------------------------------------------------------------------------------------PROJECT---------------- -->
-            <div class="projects_page">
+            <!-- --------------------------------------------------------------------------------------------EDUCATION---------------- -->
+            <div id="education_page">
                 
-                <div class="two_color_title_text">
-                    <h2 class="block_title_typical">My</h2>
-                    <h2 class="block_title_typical">Projects</h2>
+                <div class="education_page_title_block">
+                    <h2 class="education_title_text">.education</h2>
+                </div>
+
+                <div class="project_block">
+                </div> 
+
+            </div>
+            <!-- --------------------------------------------------------------------------------------------PROJECTS---------------- -->
+            <div id="projects_page">
+    
+                <!-- <div class="projects_page_title_block">
+                    <h2 class="education_title_text">.projects</h2>
+                </div> -->
+
+                <div class="header_spacer">
                 </div>
 
                 <div class="project_block">
 
-                    <img src="./Images/Review Site Image.jpg" alt="image" height="100" width="150">
-
-                    <div class="project_info_block">
-                        <h4 class="project_name">Project Name</h4>
-
-                        <p>Project Description</p>
-
+                    <!-- <img src="./Images/Review Site Image.jpg" alt="image" height="100" width="150"> -->
+                    
+                    <div class="project_block_virtualpet">
+                        <h4 class="project_name">VIRTUAL PET</h4>
+                        <p class="project_tools">C# | Team Project</p>
                         <div class="socialmedia_links">
-                            <a class="link_button" href="#">Demo</a></li>
-                            <a class="link_button" href="#">Git-hub</a></li>
+                            <a class="link_button_black" href="#">Demo</a></li>
+                            <a class="link_button_black" href="https://github.com/sergeiklein">GitHub</a></li>
                         </div>
+                    </div>
 
+                    <div class="project_block_reviewsite">
+                        <h4 class="project_name_white">REVIEW SITE</h4>
+                        <p class="project_tools_white">C# | E.F. | HTML | CSS | </p>
+                        <div class="socialmedia_links">
+                            <a class="link_button_white" href="#">Demo</a></li>
+                            <a class="link_button_white" href="https://github.com/sergeiklein">GitHub</a></li>
+                        </div>
+                    </div>
+
+                    <div class="project_block_portfolio">
+                        <h4 class="project_name_white">PORTFOLIO</h4>
+                        <p class="project_tools_white">HTML | CSS</p>
+                        <div class="socialmedia_links">
+                            <a class="link_button_white" href="#">Demo</a></li>
+                            <a class="link_button_white" href="https://github.com/sergeiklein">GitHub</a></li>
+                        </div>
+                    </div>
+
+                    <div class="project_block_finalproject">
+                        <h4 class="project_name">FINAL PROJECT</h4>
+                        <p class="project_tools">C# | E.F. | HTML | CSS | JS</p>
+                        <div class="socialmedia_links">
+                            <a class="link_button_black" href="#">Demo</a></li>
+                            <a class="link_button_black" href="https://github.com/sergeiklein">GitHub</a></li>
+                        </div>
                     </div>
 
                 </div> 
 
             </div>
-        <!-- --------------------------------------------------------------------------------------------TOOLS------------------ -->
-        <div class="tools_page">
+            <!-- --------------------------------------------------------------------------------------------SKILLS------------------ -->
+            <div id="skills_page">
+                
+                <div class="skills_page_title_block">
+                    <h2 class="skills_title_text">&nbsp;.skills</h2>
+                </div>
             
-            <div class="two_color_title_text">
-                <h2 class="block_title_typical">Tech</h2>
-                <h2 class="block_title_typical">Skills</h2>
+                <div class="tech_skill_icons">
+                    <img class="icon_style" src="./Images/HTML Icon.png" alt="HTML Icon" height="100px" width="100px">
+                    <img class="icon_style" src="./Images/CSS Icon.png" alt="CSS Icon" height="100px" width="100px">
+                    <img class="icon_style" src="./Images/JavScript Icon.png" alt="CSS Icon" height="100px" width="100px">
+                    <img class="icon_style" src="./Images/React  Icon.png" alt="CSS Icon" height="100px" width="100px">
+                    <img class="icon_style" src="./Images/C Sharp Icon.png" alt="CSS Icon" height="100px" width="100px">
+                </div> 
             </div>
-          
-            <div class="tech_skill_icons">
-                <img class="icon_style" src="./Images/HTML Icon.png" alt="HTML Icon" height="100px" width="100px">
-                <img class="icon_style" src="./Images/CSS Icon.png" alt="CSS Icon" height="100px" width="100px">
-                <img class="icon_style" src="./Images/JavScript Icon.png" alt="CSS Icon" height="100px" width="100px">
-                <img class="icon_style" src="./Images/React  Icon.png" alt="CSS Icon" height="100px" width="100px">
-                <img class="icon_style" src="./Images/C Sharp Icon.png" alt="CSS Icon" height="100px" width="100px">
-            </div> 
-        </div>
-        <!-- --------------------------------------------------------------------------------------------CONTACT------------------ -->
-        <div class="contact_page">
+            <!-- --------------------------------------------------------------------------------------------RESUME------------------ -->
+            <div id="resume_page">
+    
+                <div class="resume_page_title_block">
+                    <h2 class="resume_title_text">&nbsp;.resume</h2>
+                </div>
             
+                <div >
+
+                </div> 
+            </div>
+            <!-- --------------------------------------------------------------------------------------------CONTACT------------------ -->
+            <div id="contact_page">
+    
+                <div class="contact_page_title_block">
+                    <h2 class="contact_title_text">.resume</h2>
+                </div>
             
-            <div class="two_color_title_text">
-                <h2 class="block_title_typical">Contact</h2>
-                <h2 class="block_title_typical">Info</h2>
+                <div >
+
+                </div> 
             </div>
 
-            <p>My intro paragraph</p>
-            <div class="socialmedia_links">
-                <li><a href="#">soc-link-2</a></li>
-                <li><a href="#">soc-link-3</a></li>
-            </div> 
-        </div>
-        <!-- --------------------------------------------------------------------------------------------FOOTER------------------ -->
         </main>
+        <!-- --------------------------------------------------------------------------------------------FOOTER------------------ -->
         
-        <aside>
-            <article class="card">
-                <h3>Update 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto saepe, accusantium voluptatum ipsam corrupti maxime a autem.</p>
-                <a href="#">Check Out Update »</a>
-            </article>
-            <article class="card">
-                <h3>Update 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto saepe, accusantium voluptatum ipsam corrupti maxime a autem.</p>
-                <a href="#">Check Out Update »</a>
-            </article>
-        </aside>
         <footer>
             <small>© 2017</small>
             <ul class="social-media">

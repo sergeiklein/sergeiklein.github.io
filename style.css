@@ -1,39 +1,49 @@
-
-
+/* ---------------------------------------------------------------------------------GENERAL------------------ */
+@font-face {
+    font-family:Gotham;
+    src: url(/Fonts/Gotham-Thin.otf);
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    background-image: url("/Images/Background2.jpg");
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-attachment: fixed;
+}
 /* -----------------------------------------------------------------------------HEADER ELEMENTS-------------- */
 .header {
     display: flex;
     justify-content: center;   
-    background-color: rgb(10, 10, 10);
-    height: 100px;
+    height: 100px;   
 }
 .nav {
     display: flex;
-    justify-content: space-around;
-    width: 700px;
-    
-    line-height: 100px;
-    background-color: rgb(3, 3, 3);
+    justify-content: space-between;
+    width: 1500px;
+    line-height: 60px;
+    position: fixed;
 }
 .nav_link {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Gotham;
     font-size: 25px;
-    background-color: rgb(5, 5, 5);
-    color: white;
+    color: rgb(255, 253, 253);
     text-decoration: none;
 }
-.nav_link {
-    font-family:Arial, Helvetica, sans-serif;
+.nav_link1:hover {
+    font-family:Gotham;
     font-size: 25px;
-    background-color: rgb(5, 5, 5);
-    color: white;
+    font-weight: bold;
+    color: rgb(72, 72, 73);
     text-decoration: none;
+    transition: 0.4s;
 }
-/* ----------------------------------------------------------------------------INTRO BLOCK ELEMENTS--------------- */
-.intro_page {
+/* ----------------------------------------------------------------------------ABOUT--------------- */
+#intro_page {
     display: flex;
     flex-direction: column;
-    background-color: rgb(4, 4, 4);
+    height: 1000px;
 }
 .intro_name {
     display: flex;
@@ -41,24 +51,26 @@
     justify-content: center;
 }
 .name_first {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(72, 71, 71);
+    font-family:Gotham;
     font-size: 80px;
+    padding:40px 10px;
 }
 .name_last {
-    color: rgb(59, 130, 246);
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(3, 3, 3);
+    font-family: Gotham;
     font-size: 80px;
-    }
-.intro_titles {
+    padding:40px 10px;
+}
+.intro_titles_block {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    color:white;
 }
 .intro_title {
     display: flex;
     justify-content: center;
+    font-family: Gotham;
+    color: azure;
     font-size: 30px;
 }
 .intro_socialmedia_links {
@@ -66,10 +78,10 @@
     justify-content: center;
     justify-content: space-around;
 }
-.link_button {
-    border: 2px solid white;
-    background-color: rgba(59, 64, 37, 0.40);
-    padding: 6px 50px;
+.link_button_white {
+    border: 1px solid rgb(224, 224, 224);
+    background-color: rgba(59, 64, 37, 0.1);
+    padding: 6px 30px;
     color: white;
     font-size: 16px;
     text-transform: uppercase;  
@@ -77,49 +89,208 @@
     vertical-align: middle;
     text-decoration: none;
 }
-/* ----------------------------------------------------------------------------PROJECT ELEMENTS--------------- */
-.projects_page {
+.link_button_black {
+    border: 1px solid rgb(6, 6, 6);
+    background-color: rgba(59, 64, 37, 0.1);
+    padding: 6px 30px;
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase;  
+    font-family: Verdana;
+    vertical-align: middle;
+    text-decoration: none;
+}
+/* ----------------------------------------------------------------------------EDUCATION--------------- */
+#education_page {
     display: flex;
     flex-direction: column;
-    background-color: rgb(232, 158, 200);
+    height: 1000px;
+    background-color: rgb(82, 82, 94);
+}
+.education_page_title_block {
+    display: flex;
+    background-color: blue;
+    justify-content: center;
+    
+}
+.education_title_text {
+    color: white;
+    font-family: Gotham;
+    font-size: 30px;
+    padding: 150px;
+    background-color: blueviolet;
+}
+/* ----------------------------------------------------------------------------PROJECTS--------------- */
+#projects_page {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    
+}
+.projects_page_title_block {
+    display: flex;
+    background-color: blue;
+    justify-content: center;
+    
+}
+.projects_title_text {
+    color: white;
+    font-family: Gotham;
+    font-size: 30px;
+    padding: 150px;
+    background-color: blueviolet;
+}
+.header_spacer {
+    height: 100px;
+   
 }
 .project_block {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(73, 144, 123);
+    height:860px;
+}
+
+
+
+.project_name {
+    display: flex;
+    flex-direction: row;
+    font-family: Gotham;
+    font-size: 40px;
+    color: black;
+    justify-content: center;
+    padding: 90px 0px 0px 0px;
+}
+.project_name_white {
+    display: flex;
+    flex-direction: row;
+    font-family: Gotham;
+    font-size: 40px;
+    color: white;
+    justify-content: center;
+    padding: 90px 0px 0px 0px;
+}
+.project_tools {
+    display: flex;
+    flex-direction: row;
+    font-family: Gotham;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    justify-content: center;
+}
+.project_tools_white {
+    display: flex;
+    flex-direction: row;
+    font-family: Gotham;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    justify-content: center;
+}
+.socialmedia_links {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgb(73, 144, 123);
-}
-.project_info_block {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+    
 }
 
-/* ----------------------------------------------------------------------------TOOLS ELEMENTS--------------- */
-.tools_page {
+
+
+
+.project_block_virtualpet {
     display: flex;
-    background-color: rgb(5, 5, 5);
+    flex-direction: column;
+    background-image: url("/Images/Robot1.png");
+    background-size: cover;
 }
-.two_color_title_text {
+.project_block_reviewsite {
     display: flex;
-    justify-content: center;    
+    flex-direction: column;
+    background-image: url("/Images/Review1.png");
+    background-size: cover;
+}
+.project_block_portfolio {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/Images/Code1.png");
+    background-size: cover;
+}
+.project_block_finalproject {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/Images/Pen1.png");
+    background-size: cover;
+}
+/* ----------------------------------------------------------------------------SKILLS --------------- */
+#skills_page {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    background-color: rgb(82, 82, 94);
+}
+.skills_page_title_block {
+    display: flex;
+    background-color: blue;
+    justify-content: center;
+    
+}
+.skills_title_text {
+    color: white;
+    font-family: Gotham;
+    font-size: 30px;
+    padding: 150px;
+    background-color: blueviolet;
 }
 .tech_skill_icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: nowrap;
     background-color:black;
 }
 .icon_style {
    padding: 50px;
 }
-
-/* ----------------------------------------------------------------------------CONTACT ELEMENTS--------------- */
-.contact_page {
+/* ----------------------------------------------------------------------------RESUME --------------- */
+#resume_page {
     display: flex;
     flex-direction: column;
+    height: 1000px;
+    background-color: rgb(82, 82, 94);
+}
+.resume_page_title_block {
+    display: flex;
+    background-color: blue;
     justify-content: center;
-    background-color: rgb(232, 158, 200);
+    
+}
+.resume_title_text {
+    color: white;
+    font-family: Gotham;
+    font-size: 30px;
+    padding: 150px;
+    background-color: blueviolet;
+}
+/* ----------------------------------------------------------------------------CONTACT--------------- */
+#contact_page {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    background-color: rgb(82, 82, 94);
+}
+.contact_page_title_block {
+    display: flex;
+    background-color: blue;
+    justify-content: center;
+    
+}
+.contact_title_text {
+    color: white;
+    font-family: Gotham;
+    font-size: 30px;
+    padding: 150px;
+    background-color: blueviolet;
 }
 
-/* ----------------------------------------------------------------------------FOOTER ELEMENTS--------------- */
+/* ----------------------------------------------------------------------------FOOTER--------------- */
