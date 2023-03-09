@@ -7,7 +7,7 @@ html {
     scroll-behavior: smooth;
 }
 .container {
-    background-image: url("/Images/Background2.jpg");
+    background-image: url("/Images/Background.png");
     background-repeat: no-repeat;
     background-size: 2000px;
     background-attachment: fixed;
@@ -22,12 +22,13 @@ html {
     display: flex;
     justify-content: space-between;
     width: 1500px;
-    line-height: 60px;
+    line-height: 80px;
     position: fixed;
 }
 .nav_link {
     font-family:Gotham;
     font-size: 25px;
+    font-weight: bold;
     color: rgb(255, 253, 253);
     text-decoration: none;
 }
@@ -35,7 +36,7 @@ html {
     font-family:Gotham;
     font-size: 25px;
     font-weight: bold;
-    color: rgb(72, 72, 73);
+    color: rgb(158, 158, 160);
     text-decoration: none;
     transition: 0.4s;
 }
@@ -51,10 +52,10 @@ html {
     justify-content: center;
 }
 .name_first {
-    color: rgb(72, 71, 71);
+    color: rgb(187, 184, 184);
     font-family:Gotham;
-    font-size: 80px;
-    padding:40px 10px;
+    font-size: 120px;
+    padding:180px 10px 10px 10px ;
 }
 .name_last {
     color: rgb(3, 3, 3);
@@ -65,18 +66,19 @@ html {
 .intro_titles_block {
     display: flex;
     flex-direction: column;
+    position: relative; top: -50x;     
 }
 .intro_title {
     display: flex;
     justify-content: center;
     font-family: Gotham;
-    color: azure;
+    color: white;
     font-size: 30px;
 }
 .intro_socialmedia_links {
     display: flex;
     justify-content: center;
-    justify-content: space-around;
+    position: relative; top: 60px; 
 }
 .link_button_white {
     border: 1px solid rgb(224, 224, 224);
@@ -111,7 +113,6 @@ html {
     display: flex;
     background-color: blue;
     justify-content: center;
-    
 }
 .education_title_text {
     color: white;
@@ -124,14 +125,12 @@ html {
 #projects_page {
     display: flex;
     flex-direction: column;
-    height: 1000px;
-    
+    height: 1000px; 
 }
 .projects_page_title_block {
     display: flex;
     background-color: blue;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 .projects_title_text {
     color: white;
@@ -141,8 +140,7 @@ html {
     background-color: blueviolet;
 }
 .header_spacer {
-    height: 100px;
-   
+    height: 100px; 
 }
 .project_block {
     display: grid;
@@ -150,9 +148,6 @@ html {
     background-color: rgb(73, 144, 123);
     height:860px;
 }
-
-
-
 .project_name {
     display: flex;
     flex-direction: row;
@@ -195,10 +190,6 @@ html {
     justify-content: center;
     
 }
-
-
-
-
 .project_block_virtualpet {
     display: flex;
     flex-direction: column;
@@ -228,36 +219,39 @@ html {
     display: flex;
     flex-direction: column;
     height: 1000px;
-    background-color: rgb(82, 82, 94);
+    /* background-color: rgb(82, 82, 94); */
 }
-.skills_page_title_block {
+/* .skills_page_title_block {
     display: flex;
     background-color: blue;
     justify-content: center;
-    
-}
-.skills_title_text {
+} */
+/* .skills_title_text {
     color: white;
     font-family: Gotham;
     font-size: 30px;
-    padding: 150px;
+    padding: 100px;
     background-color: blueviolet;
-}
+} */
 .tech_skill_icons {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-    background-color:black;
+    /* background-color:black; */
+    position: relative; top: 150px; 
 }
 .icon_style {
    padding: 50px;
 }
+.skill_list {
+    color: white;
+ }
 /* ----------------------------------------------------------------------------RESUME --------------- */
 #resume_page {
     display: flex;
     flex-direction: column;
     height: 1000px;
-    background-color: rgb(82, 82, 94);
+    /* background-color: rgb(82, 82, 94); */
 }
 .resume_page_title_block {
     display: flex;
@@ -272,25 +266,87 @@ html {
     padding: 150px;
     background-color: blueviolet;
 }
+.resume_block {
+    display: flex;
+    justify-content: center;
+    position: relative; top: 120px; 
+}
+.resume_pdf {
+    border: 2px white;
+    background-color: blue;
+    
+}
 /* ----------------------------------------------------------------------------CONTACT--------------- */
 #contact_page {
     display: flex;
     flex-direction: column;
     height: 1000px;
-    background-color: rgb(82, 82, 94);
+    align-items: center;
+    justify-content: center;
 }
 .contact_page_title_block {
     display: flex;
-    background-color: blue;
-    justify-content: center;
-    
+    justify-content: center;  
+    position: relative; top: -120px;  
 }
 .contact_title_text {
     color: white;
     font-family: Gotham;
     font-size: 30px;
-    padding: 150px;
-    background-color: blueviolet;
+    position: relative; top: 100px; 
+}
+.contact_form {
+    width: 90%;
+    max-width: 600px;
+    position: relative; top: 50px;
+}
+.input_group {
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea {
+    width: 96%; /*doesnt make sense */
+    padding: 10px;
+    outline:0;
+    border:1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+label{
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    padding: 10px;
+    color: #cbcaca;
+    cursor: text;
+    font-family: Gotham;
+}
+button {
+    padding: 10px;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border:1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+.contact_links {
+    position: relative; top: 100px; 
 }
 
+.icon_style_link {
+    padding: 30px;
+ }
 /* ----------------------------------------------------------------------------FOOTER--------------- */
+.footer_block {
+    display: flex;
+    justify-content: center;
+  }
+.footer_year {
+   color: white;
+ }
+ .footer_link {
+    color: white;
+  }
