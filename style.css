@@ -391,6 +391,7 @@ html {
 }
 .contact_page_title_block {
     display: flex;
+    flex-direction: column;
     justify-content: center;  
     position: relative; top: -120px;  
 }
